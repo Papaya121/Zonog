@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zonog MVP</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #1a1a1a;
+      color: #ffffff;
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+    #wrap {
+      display: grid;
+      place-items: center;
+      height: 100%;
+    }
+    canvas {
+      background: #2b2b2b;
+      image-rendering: pixelated;
+      border: 1px solid #3a3a3a;
+    }
+    #hud {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      font-size: 14px;
+      color: #ffffff;
+      white-space: pre;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="800" height="600"></canvas>
+  </div>
+  <div id="hud">Connecting...</div>
+  <script src="renderer.js"></script>
+  <script src="prediction.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
